@@ -1,0 +1,18 @@
+<form  #signup="ngForm">
+  <div  align="center" >
+      <mat-form-field>
+        <input matInput placeholder="Email" [(ngModel)]="email" name="email">
+      </mat-form-field><br>
+      <mat-form-field>
+        <input matInput placeholder="Username" [(ngModel)]="userName" name="uname">
+      </mat-form-field><br>
+      <mat-form-field>
+        <input matInput placeholder="Mobile" type="text"  [(ngModel)]="mobile" name="mobile" maxlength="10">
+      </mat-form-field><br>
+      <mat-form-field>
+        <input matInput placeholder="Enter your password" [(ngModel)]="pwd" name="pwd" [type]="hide ? 'password' : 'text'">
+      </mat-form-field><br>
+
+      <button mat-button color="primary" (click)="Signup(email)">Signup</button>
+    </div>
+</form>

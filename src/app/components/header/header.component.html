@@ -1,0 +1,18 @@
+<h2 class="example-h2">Welcome To Olive</h2>
+  <nav mat-tab-nav-bar>
+    <a mat-tab-link
+       [routerLink]="['/login']"
+       routerLinkActive #rla="routerLinkActive"
+       [active]="true"
+       >
+      Login
+    </a>
+
+    <a mat-tab-link
+       [routerLink]="['/signup']"
+       routerLinkActive #rla="routerLinkActive"
+       [active]="true">
+      Signup
+    </a>
+  </nav>
+
