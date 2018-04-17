@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MatSnackBar} from '@angular/material';
 
 @Component({
   selector: 'app-signup',
@@ -7,12 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupComponent implements OnInit {
 
-  constructor() { }
+  constructor(public snackBar: MatSnackBar) { }
   user: any;
   ngOnInit() {
   }
   Signup(user) {
-    console.log(user);
+    this.snackBar.open('Sign up Succesfully', 'Close', {
+      duration: 3000
+    });
 
   }
 }

@@ -1,6 +1,6 @@
 .parallax {
   /* The image used */
-  background-image: url('../assets/bgStyle.png');
+  background-image: url('../assets/bgimage.svg');
 
   /* Full height */
   height: 100%;
@@ -10,4 +10,14 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
 }

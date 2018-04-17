@@ -12,7 +12,6 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
   }
-
   goTo(rout: String) {
 
     console.log(rout);

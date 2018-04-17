@@ -1,4 +1,8 @@
 div{
-  background: -webkit-linear-gradient(top, lightblue, white);
+  /*background: -webkit-linear-gradient(top, lightblue, white);*/
 
+}
+button{
+  background: darkgoldenrod;
+  color: white;
 }
